@@ -36,6 +36,12 @@ Dimension Tables :
        
     
     immigrant_df
+    immigrant_df
+       'id'
+        'age'
+        'gender'
+       'visa_type'
+       'visa_code' 
         
     
     city_temp_df
@@ -43,7 +49,7 @@ Dimension Tables :
         'City'
     
     ariport_df
-        id'
+        'id'
         'type'
         'name'
         'iso_country'
@@ -56,11 +62,11 @@ Dimension Tables :
 Fact Table
 
     immigration_df:
-        id
-        state_code
-        city_code
-        Date
-        count
+        'id'
+        'state_code'
+        'city_code'
+        'Date'
+        'count'
 
 
 
