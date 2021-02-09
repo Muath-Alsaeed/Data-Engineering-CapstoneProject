@@ -15,3 +15,52 @@ U.S. City Demographic Data: This data comes from OpenSoft. You can read more abo
 
 Airport Code Table: This is a simple table of airport codes and corresponding cities. It comes from [here](https://datahub.io/core/airport-codes#data).
 
+Data Model:
+-----------------
+use star schema as our data model because Starr schemas are designed to optimize user ease-of-use and minimizing the number of tables join to do the query. 
+
+schema:
+----------------------
+Dimension Tables :
+
+    city_df
+        'City_Name',
+         'State_Name',
+         'Median_Age',
+         'Male_Population',
+         'Female Population',
+         'Total_Population',
+          'State_Code',
+           'Race',
+         'count_of_Race_in_city'
+       
+    
+    immigrant_df
+        
+    
+    city_temp_df
+        'AverageTemperature'
+        'City'
+    
+    ariport_df
+        id'
+        'type'
+        'name'
+        'iso_country'
+         'local_code'
+         'coordinates'
+         
+        
+        
+    
+Fact Table
+
+    immigration_df:
+        id
+        state_code
+        city_code
+        Date
+        count
+
+
+
